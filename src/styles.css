@@ -1,5 +1,14 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.done {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.done > div > button {
+  color: #000;
 }
 
 ul {
@@ -7,11 +16,15 @@ ul {
 }
 
 ul > li {
-  list-style-type: none;
+  border-radius: 4px;
 }
 
 header > h1 {
   text-align: center;
+}
+
+input {
+  font-family: "Courier New", Courier, monospace;
 }
 
 button {
@@ -19,7 +32,16 @@ button {
   background: none;
   border-radius: 4px;
   color: #555;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  margin: 2px;
+}
+
+.complete-button:hover {
+  border-color: green;
+}
+
+.delete-button:hover {
+  border-color: red;
 }
 
 .content-wrapper {
@@ -41,4 +63,20 @@ button {
 
 .todo-item:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.add-todo-form button:hover {
+  border-color: blue;
+}
+
+.add-todo-form input {
+  width: 40vw;
+}
+
+p {
+  color: red;
+}
+
+.hidden {
+  display: none;
 }
