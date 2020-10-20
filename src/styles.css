@@ -44,6 +44,10 @@ button {
   border-color: red;
 }
 
+.revert-button:hover {
+  border-color: yellow;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
